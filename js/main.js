@@ -6,16 +6,20 @@
   function getLang() {
     var l;
     try { l = localStorage.getItem("lang"); } catch (e) {}
-    if (!l) {
-      var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
-      l = nav.indexOf("zh") === 0 ? "zh" : "en";
-    }
+    if (!l) { l = "zh"; } // default to Chinese
     return l === "zh" ? "zh" : "en";
   }
   function applyLang(l) {
     document.documentElement.setAttribute("data-lang", l);
     document.documentElement.setAttribute("lang", l === "zh" ? "zh-CN" : "en");
     try { localStorage.setItem("lang", l); } catch (e) {}
+    // Swap text in elements that can't hold spans (option text, placeholders)
+    document.querySelectorAll("option[data-en][data-zh]").forEach(function (o) {
+      o.textContent = l === "zh" ? o.getAttribute("data-zh") : o.getAttribute("data-en");
+    });
+    document.querySelectorAll("[data-ph-en][data-ph-zh]").forEach(function (el) {
+      el.setAttribute("placeholder", l === "zh" ? el.getAttribute("data-ph-zh") : el.getAttribute("data-ph-en"));
+    });
   }
   // Set as early as possible (an inline <head> script also does this to avoid flash)
   applyLang(getLang());

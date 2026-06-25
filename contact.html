@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>(function(){try{var l=localStorage.getItem('lang')||((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en');l=l==='zh'?'zh':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l==='zh'?'zh-CN':'en');}catch(e){document.documentElement.setAttribute('data-lang','en');}})();</script>
+  <script>(function(){try{var l=localStorage.getItem('lang')||'zh';l=l==='zh'?'zh':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l==='zh'?'zh-CN':'en');}catch(e){document.documentElement.setAttribute('data-lang','en');}})();</script>
   <title>Contact — ChudongLive | 联系 — AI 直播助手</title>
   <meta name="description" content="Contact ChudongLive support. Email us or send a message; we reply within one business day. | 联系 ChudongLive 客服。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=2" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -58,17 +58,17 @@
             <div class="field">
               <label for="topic"><span class="lx-en">Topic</span><span class="lx-zh">主题</span></label>
               <select id="topic" name="topic">
-                <option>General question / 一般咨询</option>
-                <option>Billing &amp; subscription / 计费与订阅</option>
-                <option>Refund request / 退款申请</option>
-                <option>Account &amp; login / 账户与登录</option>
-                <option>Technical support / 技术支持</option>
-                <option>Partnership / 商务合作</option>
+                <option data-en="General question" data-zh="一般咨询">一般咨询</option>
+                <option data-en="Billing &amp; subscription" data-zh="计费与订阅">计费与订阅</option>
+                <option data-en="Refund request" data-zh="退款申请">退款申请</option>
+                <option data-en="Account &amp; login" data-zh="账户与登录">账户与登录</option>
+                <option data-en="Technical support" data-zh="技术支持">技术支持</option>
+                <option data-en="Partnership" data-zh="商务合作">商务合作</option>
               </select>
             </div>
             <div class="field">
               <label for="message"><span class="lx-en">Message</span><span class="lx-zh">留言内容</span></label>
-              <textarea id="message" name="message" required placeholder="How can we help? / 我们能帮你什么?"></textarea>
+              <textarea id="message" name="message" required data-ph-en="How can we help?" data-ph-zh="我们能帮你什么?" placeholder="我们能帮你什么?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block"><span class="lx-en">Send message</span><span class="lx-zh">发送留言</span></button>
             <div class="form-msg" id="form-msg"></div>
@@ -113,6 +113,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
