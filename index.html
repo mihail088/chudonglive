@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChudongLive — Live Streaming, Social & AI Chat Platform</title>
-  <meta name="description" content="ChudongLive is a live-streaming social platform where you can host and watch live streams, chat with AI companions, and use virtual credits to send digital gifts and unlock premium features." />
+  <script>(function(){try{var l=localStorage.getItem('lang')||((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en');l=l==='zh'?'zh':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l==='zh'?'zh-CN':'en');}catch(e){document.documentElement.setAttribute('data-lang','en');}})();</script>
+  <title>ChudongLive — AI Copilot for Live Streaming | AI 直播助手软件</title>
+  <meta name="description" content="ChudongLive is AI assistant software for live streamers: real-time captions & translation, AI avatar co-host, smart chat replies, auto highlight clips, and live analytics. | ChudongLive 是面向主播的 AI 直播辅助软件。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -13,30 +14,29 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container">
       <nav class="nav">
         <a class="brand" href="index.html">
-          <span class="logo-mark">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/><path d="M9.5 21.5h5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
-          </span>
+          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/><path d="M9.5 21.5h5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></span>
           ChudongLive
         </a>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html"><span class="lx-en">Home</span><span class="lx-zh">首页</span></a></li>
+          <li><a href="features.html"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a></li>
+          <li><a href="pricing.html"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a></li>
+          <li><a href="about.html"><span class="lx-en">About</span><span class="lx-zh">关于</span></a></li>
+          <li><a href="faq.html"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a></li>
+          <li><a href="contact.html"><span class="lx-en">Contact</span><span class="lx-zh">联系</span></a></li>
         </ul>
         <div class="nav-cta">
-          <a href="pricing.html" class="btn btn-primary">Get Credits</a>
+          <button class="lang-toggle" data-lang-toggle aria-label="Switch language / 切换语言">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.5 0 4.5-4 4.5-9S14.5 3 12 3 7.5 7 7.5 12s2 9 4.5 9ZM3.5 9h17M3.5 15h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span class="lx-en">中文</span><span class="lx-zh">EN</span>
+          </button>
+          <a href="pricing.html" class="btn btn-primary"><span class="lx-en">Start free</span><span class="lx-zh">免费试用</span></a>
         </div>
-        <button class="nav-toggle" aria-label="Toggle menu">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       </nav>
     </div>
   </header>
@@ -45,17 +45,23 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Live streaming · Social · AI companions</span>
-        <h1>Go live, connect, and<br><span class="gradient-text">spark real moments</span></h1>
-        <p class="lead">ChudongLive is a live-streaming social platform. Host or join live streams, chat with friends and AI companions in real time, and use virtual credits to send digital gifts and unlock premium experiences.</p>
+        <span class="eyebrow"><span class="lx-en">AI assistant for live streamers</span><span class="lx-zh">为主播打造的 AI 助手</span></span>
+        <h1>
+          <span class="lx-en">The AI copilot that<br><span class="gradient-text">runs your live stream</span></span>
+          <span class="lx-zh">让 AI 帮你<br><span class="gradient-text">搞定整场直播</span></span>
+        </h1>
+        <p class="lead">
+          <span class="lx-en">ChudongLive is desktop &amp; cloud software that supercharges any live stream — real-time captions and translation, an AI avatar co-host, smart chat replies, automatic highlight clips, and live analytics. Works with OBS, Twitch, YouTube, TikTok and more.</span>
+          <span class="lx-zh">ChudongLive 是一款桌面 + 云端直播辅助软件:实时字幕与翻译、AI 数字人共播、智能弹幕互动与自动回复、高光自动剪辑、直播数据分析。兼容 OBS、抖音、B 站、YouTube、TikTok 等主流平台。</span>
+        </p>
         <div class="hero-cta">
-          <a href="pricing.html" class="btn btn-primary btn-lg">View credit packages</a>
-          <a href="features.html" class="btn btn-ghost btn-lg">Explore features</a>
+          <a href="pricing.html" class="btn btn-primary btn-lg"><span class="lx-en">Start free trial</span><span class="lx-zh">免费开始试用</span></a>
+          <a href="features.html" class="btn btn-ghost btn-lg"><span class="lx-en">See features</span><span class="lx-zh">查看功能</span></a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><strong>120K+</strong><span>Monthly creators</span></div>
-          <div class="stat"><strong>40+</strong><span>Countries</span></div>
-          <div class="stat"><strong>4.8★</strong><span>Average rating</span></div>
+          <div class="stat"><strong>50K+</strong><span><span class="lx-en">Active streamers</span><span class="lx-zh">活跃主播</span></span></div>
+          <div class="stat"><strong>30+</strong><span><span class="lx-en">Languages</span><span class="lx-zh">支持语言</span></span></div>
+          <div class="stat"><strong>4.8★</strong><span><span class="lx-en">Average rating</span><span class="lx-zh">平均评分</span></span></div>
         </div>
       </div>
       <div class="hero-mock">
@@ -65,15 +71,12 @@
               <span class="live-badge">LIVE</span>
               <span class="viewers">👁 2,418</span>
               <div class="gift-bubbles">
-                <span>🌹 Aria sent a Rose</span>
-                <span>🎁 Leo sent a Galaxy Box</span>
-                <span>✨ +120 viewers joined</span>
+                <span><span class="lx-en">🤖 AI co-host replying…</span><span class="lx-zh">🤖 AI 数字人自动回复中…</span></span>
+                <span><span class="lx-en">💬 Auto caption: EN → 中文</span><span class="lx-zh">💬 实时字幕:中 → EN</span></span>
+                <span><span class="lx-en">✂️ Highlight clip saved</span><span class="lx-zh">✂️ 已自动保存高光片段</span></span>
               </div>
             </div>
-            <div class="phone-bar">
-              <div class="pill"></div>
-              <div class="send"></div>
-            </div>
+            <div class="phone-bar"><div class="pill"></div><div class="send"></div></div>
           </div>
         </div>
       </div>
@@ -83,12 +86,12 @@
   <!-- TRUST BAR -->
   <div class="trust">
     <div class="container">
-      <span>Built for a safe, secure experience</span>
+      <span><span class="lx-en">Trusted, secure software</span><span class="lx-zh">安全可靠的软件</span></span>
       <div class="badges">
-        <b>🔒 SSL-encrypted checkout</b>
-        <b>💳 Powered by Stripe</b>
-        <b>🛡️ 24/7 content moderation</b>
-        <b>🔞 18+ verified community</b>
+        <b><span class="lx-en">🔒 Encrypted &amp; private</span><span class="lx-zh">🔒 加密与隐私保护</span></b>
+        <b><span class="lx-en">💳 Billing by Stripe</span><span class="lx-zh">💳 Stripe 安全支付</span></b>
+        <b><span class="lx-en">⚡ Works with OBS</span><span class="lx-zh">⚡ 兼容 OBS</span></b>
+        <b><span class="lx-en">↩️ Cancel anytime</span><span class="lx-zh">↩️ 随时取消</span></b>
       </div>
     </div>
   </div>
@@ -97,40 +100,40 @@
   <section class="section">
     <div class="container">
       <div class="center">
-        <span class="eyebrow">What you can do</span>
-        <h2>Everything happening in real time</h2>
-        <p class="lead">One platform for live entertainment, social connection, and AI conversation — built for creators and viewers alike.</p>
+        <span class="eyebrow"><span class="lx-en">What it does</span><span class="lx-zh">核心能力</span></span>
+        <h2><span class="lx-en">One assistant for your whole stream</span><span class="lx-zh">一个助手,搞定整场直播</span></h2>
+        <p class="lead"><span class="lx-en">ChudongLive handles the busywork so you can focus on your audience.</span><span class="lx-zh">ChudongLive 帮你处理繁琐的环节,让你专注与观众互动。</span></p>
       </div>
       <div class="grid grid-3" style="margin-top:48px">
         <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M15 10l4.5-2.6A1 1 0 0 1 21 8.3v7.4a1 1 0 0 1-1.5.9L15 14m-12-3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-6Z" stroke="currentColor" stroke-width="1.7"/></svg></div>
-          <h3>Live streaming</h3>
-          <p>Start a broadcast in one tap or join thousands of live rooms. Low-latency video, real-time chat, and interactive co-host sessions keep every moment alive.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z" stroke="currentColor" stroke-width="1.7"/></svg></div>
+          <h3><span class="lx-en">Real-time captions &amp; translation</span><span class="lx-zh">实时字幕与翻译</span></h3>
+          <p><span class="lx-en">Auto-generate live subtitles and translate them into 30+ languages on screen, so global viewers understand every word.</span><span class="lx-zh">自动生成直播字幕,并实时翻译成 30+ 种语言显示在画面上,让全球观众听得懂每一句话。</span></p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Zm-7 9a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <h3><span class="lx-en">AI avatar co-host</span><span class="lx-zh">AI 数字人共播</span></h3>
+          <p><span class="lx-en">Add a lifelike AI co-host that chats with your audience, keeps the energy up, and covers breaks — fully under your control.</span><span class="lx-zh">添加一个逼真的 AI 数字人搭档,陪你和观众互动、活跃气氛、暖场救场,一切由你掌控。</span></p>
         </div>
         <div class="card">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5Z" stroke="currentColor" stroke-width="1.7"/></svg></div>
-          <h3>AI chat companions</h3>
-          <p>Talk to friendly, personality-rich AI companions any time of day. Practice languages, get recommendations, or just enjoy a fun, judgment-free conversation.</p>
+          <h3><span class="lx-en">Smart chat replies</span><span class="lx-zh">智能弹幕互动</span></h3>
+          <p><span class="lx-en">AI suggests and auto-answers common questions in chat, greets new viewers, and flags spam — keeping your comments lively and clean.</span><span class="lx-zh">AI 自动回答弹幕里的常见问题、欢迎新观众、过滤垃圾信息,让评论区既热闹又干净。</span></p>
         </div>
         <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 12v9H4v-9M2 7h20v5H2V7Zm10 0v14M12 7S9 1 6.5 3.5 12 7 12 7Zm0 0s3-6 5.5-3.5S12 7 12 7Z" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Virtual gifts &amp; credits</h3>
-          <p>Buy virtual credits to send animated digital gifts during live streams and unlock premium digital features — a fun way to show support for the creators you love.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H4zM2 20h20M8 8l3 3-3 3M13 14h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3><span class="lx-en">AI topics &amp; scripts</span><span class="lx-zh">AI 选题与脚本</span></h3>
+          <p><span class="lx-en">Out of ideas? Generate trending topics, talking points, and a full run-of-show script tailored to your niche in seconds.</span><span class="lx-zh">没灵感?根据你的领域,几秒生成热门选题、话术要点和完整直播脚本。</span></p>
         </div>
         <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm14 10v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11" stroke="currentColor" stroke-width="1.7"/></svg></div>
-          <h3>Social community</h3>
-          <p>Follow your favorite creators, build watch parties, react with live emotes, and meet people who share your interests in moderated, friendly rooms.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M15.5 2H8.5L3 11l9 11 9-11-5.5-9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3><span class="lx-en">Auto highlight clips</span><span class="lx-zh">高光自动剪辑</span></h3>
+          <p><span class="lx-en">AI detects your best moments and exports short, ready-to-post clips for TikTok, Reels and Shorts — no editing required.</span><span class="lx-zh">AI 自动识别精彩瞬间,导出适配抖音、视频号、Shorts 的短视频,无需手动剪辑。</span></p>
         </div>
         <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" stroke="currentColor" stroke-width="1.7"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
-          <h3>Safety &amp; moderation</h3>
-          <p>AI-assisted filters plus a 24/7 human trust &amp; safety team keep the community welcoming. Easy reporting and blocking put you in control.</p>
-        </div>
-        <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.7"/></svg></div>
-          <h3>Watch anywhere</h3>
-          <p>Pick up right where you left off across web and mobile. Your credits, follows, and chat history stay perfectly in sync on every device.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3 8 4-16 3 8h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3><span class="lx-en">Live analytics</span><span class="lx-zh">直播数据分析</span></h3>
+          <p><span class="lx-en">See viewers, retention, peak moments, and chat sentiment in real time, with clear reports after every stream.</span><span class="lx-zh">实时查看在线人数、留存、峰值时刻和弹幕情绪,每场直播结束后还有清晰报表。</span></p>
         </div>
       </div>
     </div>
@@ -140,42 +143,41 @@
   <section class="section" style="background:rgba(255,255,255,.015);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
     <div class="container">
       <div class="center">
-        <span class="eyebrow">How it works</span>
-        <h2>Start in under a minute</h2>
+        <span class="eyebrow"><span class="lx-en">How it works</span><span class="lx-zh">使用流程</span></span>
+        <h2><span class="lx-en">Live in three steps</span><span class="lx-zh">三步开播</span></h2>
       </div>
       <div class="grid grid-3 steps" style="margin-top:48px">
         <div class="step card">
-          <h3>Create your account</h3>
-          <p>Sign up free with your email, confirm you are 18 or older, and personalize your profile. No purchase required to start exploring.</p>
+          <h3><span class="lx-en">Connect your stream</span><span class="lx-zh">连接你的直播</span></h3>
+          <p><span class="lx-en">Install ChudongLive and link it to OBS or your streaming platform in one click. No complex setup.</span><span class="lx-zh">安装 ChudongLive,一键连接 OBS 或你的直播平台,无需复杂配置。</span></p>
         </div>
         <div class="step card">
-          <h3>Buy virtual credits</h3>
-          <p>Top up your wallet with a credit package through our secure Stripe checkout. Credits appear in your balance instantly.</p>
+          <h3><span class="lx-en">Turn on the AI tools</span><span class="lx-zh">开启 AI 功能</span></h3>
+          <p><span class="lx-en">Pick the assistants you want — captions, co-host, smart replies, highlights — and customize them to your style.</span><span class="lx-zh">选择你需要的助手:字幕、数字人、智能回复、高光剪辑,并按你的风格自定义。</span></p>
         </div>
         <div class="step card">
-          <h3>Watch, chat &amp; gift</h3>
-          <p>Join live streams, talk to AI companions, and spend credits on digital gifts and premium features whenever you like.</p>
+          <h3><span class="lx-en">Go live &amp; relax</span><span class="lx-zh">开播,然后放轻松</span></h3>
+          <p><span class="lx-en">ChudongLive runs in the background, handling the busywork while you connect with your audience.</span><span class="lx-zh">ChudongLive 在后台自动运行,帮你处理琐事,你只管和观众互动。</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT ARE CREDITS -->
+  <!-- SPLIT -->
   <section class="section">
     <div class="container split">
       <div>
-        <span class="eyebrow">Virtual credits, explained</span>
-        <h2>A simple in-app currency for digital goods</h2>
-        <p>ChudongLive Credits are a prepaid virtual currency used only inside ChudongLive. You purchase credits with real money and spend them on digital items and services.</p>
-        <div class="value-row"><span class="check">✓</span><div><strong>Send virtual gifts</strong> — animated digital gifts that appear during live streams.</div></div>
-        <div class="value-row"><span class="check">✓</span><div><strong>Unlock premium features</strong> — extended AI chat sessions, special effects, profile themes, and more.</div></div>
-        <div class="value-row"><span class="check">✓</span><div><strong>Instant delivery</strong> — credits and digital items are delivered to your account immediately after purchase.</div></div>
-        <p class="muted" style="margin-top:18px;font-size:.92rem">Credits have no cash value, are non-transferable, and cannot be redeemed or withdrawn for real money. See our <a href="terms.html">Terms of Service</a> and <a href="refund.html">Refund Policy</a> for full details.</p>
+        <span class="eyebrow"><span class="lx-en">Built for creators</span><span class="lx-zh">为创作者而生</span></span>
+        <h2><span class="lx-en">More reach, less work</span><span class="lx-zh">覆盖更广,操作更省</span></h2>
+        <p><span class="lx-en">Whether you stream to one platform or simulcast to many, ChudongLive helps you grow without burning out.</span><span class="lx-zh">无论你是单平台开播,还是多平台同步推流,ChudongLive 都能帮你高效成长、不再疲于奔命。</span></p>
+        <div class="value-row"><span class="check">✓</span><div><span class="lx-en"><strong>Multi-platform simulcast</strong> — stream to several platforms at once.</span><span class="lx-zh"><strong>多平台同步推流</strong> —— 一次开播,多平台同时直播。</span></div></div>
+        <div class="value-row"><span class="check">✓</span><div><span class="lx-en"><strong>AI beauty &amp; virtual background</strong> — look your best in any setting.</span><span class="lx-zh"><strong>AI 美颜与虚拟背景</strong> —— 任何场景都呈现最佳状态。</span></div></div>
+        <div class="value-row"><span class="check">✓</span><div><span class="lx-en"><strong>Your data stays yours</strong> — we never sell your data or content.</span><span class="lx-zh"><strong>数据归你所有</strong> —— 我们绝不出售你的数据或内容。</span></div></div>
       </div>
       <div class="feature-visual">
-        <div class="chat-line ai"><span class="av"></span><span class="bubble">Hi! I'm Nova, your AI companion. Want a movie recommendation tonight? 🎬</span></div>
-        <div class="chat-line me"><span class="bubble">Yes! Something cozy and feel-good 😊</span></div>
-        <div class="chat-line ai"><span class="av"></span><span class="bubble">Perfect — try "Begin Again". Tap ✨ to unlock an extended chat with credits!</span></div>
+        <div class="chat-line ai"><span class="av"></span><span class="bubble"><span class="lx-en">🤖 New viewer "Aria" joined — say hi?</span><span class="lx-zh">🤖 新观众「Aria」进入直播间,要打招呼吗?</span></span></div>
+        <div class="chat-line me"><span class="bubble"><span class="lx-en">Yes, and translate my last line to English.</span><span class="lx-zh">好,把我刚才那句翻译成英文。</span></span></div>
+        <div class="chat-line ai"><span class="av"></span><span class="bubble"><span class="lx-en">Done ✅ Caption pushed in EN + 中文.</span><span class="lx-zh">完成 ✅ 已推送中英双语字幕。</span></span></div>
       </div>
     </div>
   </section>
@@ -184,59 +186,53 @@
   <section class="section">
     <div class="container">
       <div class="cta-band">
-        <h2>Ready to join the moment?</h2>
-        <p>Create a free account today, then top up whenever you're ready. Secure checkout, instant delivery, friendly support.</p>
+        <h2><span class="lx-en">Ready to level up your stream?</span><span class="lx-zh">准备好让直播升级了吗?</span></h2>
+        <p><span class="lx-en">Start free today. Upgrade whenever you're ready — cancel anytime, secure checkout.</span><span class="lx-zh">今天就免费开始,随时升级、随时取消,支付安全无忧。</span></p>
         <div class="hero-cta" style="justify-content:center">
-          <a href="pricing.html" class="btn btn-primary btn-lg">See pricing</a>
-          <a href="contact.html" class="btn btn-ghost btn-lg">Talk to us</a>
+          <a href="pricing.html" class="btn btn-primary btn-lg"><span class="lx-en">View pricing</span><span class="lx-zh">查看定价</span></a>
+          <a href="contact.html" class="btn btn-ghost btn-lg"><span class="lx-en">Talk to us</span><span class="lx-zh">联系我们</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="index.html" style="margin-bottom:14px">
-            <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/></svg></span>
-            ChudongLive
-          </a>
-          <p>A live-streaming social platform for real-time entertainment, AI conversation, and digital gifting. Built to be safe, fun, and welcoming for everyone 18+.</p>
+          <a class="brand" href="index.html" style="margin-bottom:14px"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/></svg></span>ChudongLive</a>
+          <p><span class="lx-en">AI assistant software for live streamers — captions, AI co-host, smart replies, highlights, and analytics. Stream smarter, not harder.</span><span class="lx-zh">面向主播的 AI 直播辅助软件 —— 字幕、数字人、智能回复、高光剪辑与数据分析。让直播更聪明、更省力。</span></p>
         </div>
         <div>
-          <h4>Product</h4>
+          <h4><span class="lx-en">Product</span><span class="lx-zh">产品</span></h4>
           <ul>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="pricing.html">Pricing &amp; credits</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About us</a></li>
+            <li><a href="features.html"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a></li>
+            <li><a href="pricing.html"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a></li>
+            <li><a href="faq.html"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a></li>
+            <li><a href="about.html"><span class="lx-en">About us</span><span class="lx-zh">关于我们</span></a></li>
           </ul>
         </div>
         <div>
-          <h4>Legal</h4>
+          <h4><span class="lx-en">Legal</span><span class="lx-zh">法律</span></h4>
           <ul>
-            <li><a href="terms.html">Terms of Service</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="refund.html">Refund Policy</a></li>
-            <li><a href="guidelines.html">Community Guidelines</a></li>
+            <li><a href="terms.html"><span class="lx-en">Terms of Service</span><span class="lx-zh">服务条款</span></a></li>
+            <li><a href="privacy.html"><span class="lx-en">Privacy Policy</span><span class="lx-zh">隐私政策</span></a></li>
+            <li><a href="refund.html"><span class="lx-en">Refund Policy</span><span class="lx-zh">退款政策</span></a></li>
+            <li><a href="guidelines.html"><span class="lx-en">Acceptable Use</span><span class="lx-zh">使用规范</span></a></li>
           </ul>
         </div>
         <div>
-          <h4>Support</h4>
+          <h4><span class="lx-en">Support</span><span class="lx-zh">支持</span></h4>
           <ul>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="mailto:mihailradkevic2@gmail.com">Email support</a></li>
-            <li><a href="faq.html">Help center</a></li>
+            <li><a href="contact.html"><span class="lx-en">Contact us</span><span class="lx-zh">联系我们</span></a></li>
+            <li><a href="mailto:mihailradkevic2@gmail.com"><span class="lx-en">Email support</span><span class="lx-zh">邮件支持</span></a></li>
+            <li><a href="faq.html"><span class="lx-en">Help center</span><span class="lx-zh">帮助中心</span></a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© <span data-year>2026</span> ChudongLive. All rights reserved.</p>
-        <div class="pay">
-          <span>Visa</span><span>Mastercard</span><span>Amex</span><span>Stripe</span>
-        </div>
+        <p>© <span data-year>2026</span> ChudongLive. <span class="lx-en">All rights reserved.</span><span class="lx-zh">保留所有权利。</span></p>
+        <div class="pay"><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Stripe</span></div>
       </div>
     </div>
   </footer>

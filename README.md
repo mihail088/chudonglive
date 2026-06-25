@@ -1,25 +1,40 @@
-# ChudongLive — website for Stripe account review
+# ChudongLive — AI live-streaming assistant (bilingual website)
 
-A complete, self-contained static website for **ChudongLive**, a live-streaming social platform
-(live interaction · AI chat · virtual credits for digital gifts & premium features).
-It is built specifically to satisfy what Stripe reviewers look for when approving an account.
+Official website for **ChudongLive**, AI assistant software for live streamers
+(real-time captions & translation, AI avatar co-host, smart chat replies, auto highlight
+clips, multi-platform simulcast, and analytics). Built as a clean static site with
+**Chinese + English** language switching, and structured to satisfy Stripe's review checklist.
 
-## What's included
+**Live site:** https://mihail088.github.io/chudonglive/
+**Repo:** https://github.com/mihail088/chudonglive
+
+## Pages
 
 | Page | File | Purpose |
 |------|------|---------|
-| Home | `index.html` | Clear description of the business and what is sold |
-| Features | `features.html` | Detailed product features |
-| Pricing | `pricing.html` | **Visible prices** for credit packages + what credits buy |
+| Home | `index.html` | Product overview |
+| Features | `features.html` | Detailed AI features |
+| Pricing | `pricing.html` | Free / Pro / Studio subscription plans |
 | About | `about.html` | Company, mission, contact |
-| FAQ | `faq.html` | Billing, refunds, safety, AI, accounts |
-| Contact | `contact.html` | Contact form + email + support hours |
+| FAQ | `faq.html` | Plans, billing, refunds, AI, privacy |
+| Contact | `contact.html` | Contact form + email |
 | Terms of Service | `terms.html` | Full ToS |
 | Privacy Policy | `privacy.html` | Full privacy policy |
-| Refund & Cancellation | `refund.html` | **Refund policy** (Stripe requires this) |
-| Community Guidelines | `guidelines.html` | **Acceptable use / prohibited content** (critical for streaming + gifting) |
+| Refund & Cancellation | `refund.html` | 7-day money-back + cancel anytime |
+| Acceptable Use | `guidelines.html` | Prohibited uses |
 
-No build step, no dependencies. Pure HTML/CSS/JS — opens in any browser and deploys anywhere.
+No build step, no dependencies — pure HTML/CSS/JS.
+
+## Bilingual (中文 / English)
+
+- A **language toggle** sits in the top-right nav on every page (中文 ⇄ EN).
+- The choice is saved to `localStorage` and persists across pages.
+- On first visit, the language is auto-detected from the browser (`zh*` → Chinese, else English).
+- How it works: translatable text exists in both languages, tagged `.lx-en` / `.lx-zh`;
+  CSS shows one based on `<html data-lang>`. An inline `<head>` script sets the language
+  before paint to avoid any flash. Logic lives in `js/main.js`.
+- To add/edit copy: provide both `<span class="lx-en">…</span><span class="lx-zh">…</span>`
+  (for long legal text, the whole English and Chinese blocks are wrapped in `.lx-en` / `.lx-zh`).
 
 ## Preview locally
 
@@ -29,53 +44,27 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deploy (pick one — all free)
+## Deploy / update
 
-Stripe needs a **public URL**, so you must host this somewhere:
+The site is hosted on **GitHub Pages**. To publish changes:
 
-- **Netlify Drop** — go to https://app.netlify.com/drop and drag this whole folder in. Instant URL.
-- **Vercel** — `npx vercel` in this folder, or import the folder at vercel.com.
-- **Cloudflare Pages** — create a project, upload the folder ("Direct Upload").
-- **GitHub Pages** — push these files to a repo, enable Pages on the `main` branch root.
+```bash
+git add -A && git commit -m "your message" && git push
+# GitHub Pages redeploys in ~1–2 minutes
+```
 
-A custom domain (e.g. `chudonglive.app`) looks more credible to reviewers than a `*.netlify.app`
-subdomain, but a subdomain works for approval.
+## Before submitting to Stripe — customize
 
-## Before you submit to Stripe — customize these
+- **Statement descriptor** — pages say charges appear as `CHUDONGLIVE`; match this in your Stripe dashboard.
+- **Prices** — the plans in `pricing.html` are examples; set your real prices.
+- **Business details** — add a registered address in `about.html`/footer if Stripe requests one.
+- Contact email is set to `mihailradkevic2@gmail.com` throughout.
 
-The contact email is already set to **mihailradkevic2@gmail.com** throughout. Review and update:
+## Why it passes Stripe review
 
-1. **Business / brand name** — currently "ChudongLive". Replace if you want a different name
-   (search-and-replace `ChudongLive` across the `.html` files).
-2. **Legal entity & address** — if Stripe asks for a registered business address, add it to
-   `about.html` and the footer. For an individual/sole-proprietor account, your name + email is usually fine.
-3. **Prices** — the credit packages in `pricing.html` are examples; set them to your real prices.
-4. **Statement descriptor** — `pricing.html`/`faq.html` say charges appear as `CHUDONGLIVE`.
-   Make this match the descriptor you configure in your Stripe dashboard.
-
-## Why this passes Stripe review — checklist
-
-- ✅ Clear description of the business and exactly what customers buy
-- ✅ Products/services with **visible prices** (credit packages)
-- ✅ **Terms of Service**
-- ✅ **Privacy Policy**
-- ✅ **Refund / Cancellation Policy** (explicit, with how-to-request steps)
-- ✅ **Acceptable Use / Community Guidelines** banning prohibited content
-      (no sexual content, no minors, no money laundering) — the #1 thing
-      that gets streaming/virtual-gift sites rejected
-- ✅ Credits clearly described as **non-cash, non-redeemable digital goods**
-      (avoids being treated as money transmission / stored value)
-- ✅ 18+ age requirement stated repeatedly
-- ✅ Contact info (email + form + support hours)
-- ✅ "Powered by Stripe" + secure-checkout messaging
-- ✅ Professional, consistent, mobile-responsive design
-
-## Tips for the actual Stripe application
-
-- In the application, describe the business plainly: *"A live-streaming social platform where
-  users watch and host live streams, chat with AI companions, and buy virtual credits to send
-  digital gifts and unlock premium features. All products are digital."*
-- Make sure the website is **live and reachable** when you submit — reviewers open it.
-- If asked for the product/pricing URL, give the **Pricing** page directly.
-- Emphasize **digital goods only** and that credits **cannot be cashed out** — this avoids
-  money-transmitter classification questions.
+- ✅ Clear description of the software and what subscribers pay for
+- ✅ Visible subscription pricing (Free / Pro / Studio)
+- ✅ Terms of Service, Privacy Policy, Refund & Cancellation Policy, Acceptable Use Policy
+- ✅ SaaS subscription model (clean, low-risk — no virtual currency/marketplace)
+- ✅ Cancel-anytime + 7-day money-back clearly stated
+- ✅ Contact info, "Powered by Stripe" trust signals, professional responsive design

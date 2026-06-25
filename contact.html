@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — ChudongLive</title>
-  <meta name="description" content="Contact ChudongLive support. Email us or send a message and our team will reply within one business day." />
+  <script>(function(){try{var l=localStorage.getItem('lang')||((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en');l=l==='zh'?'zh':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l==='zh'?'zh-CN':'en');}catch(e){document.documentElement.setAttribute('data-lang','en');}})();</script>
+  <title>Contact — ChudongLive | 联系 — AI 直播助手</title>
+  <meta name="description" content="Contact ChudongLive support. Email us or send a message; we reply within one business day. | 联系 ChudongLive 客服。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,24 +18,27 @@
       <nav class="nav">
         <a class="brand" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/><path d="M9.5 21.5h5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></span>ChudongLive</a>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html"><span class="lx-en">Home</span><span class="lx-zh">首页</span></a></li>
+          <li><a href="features.html"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a></li>
+          <li><a href="pricing.html"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a></li>
+          <li><a href="about.html"><span class="lx-en">About</span><span class="lx-zh">关于</span></a></li>
+          <li><a href="faq.html"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a></li>
+          <li><a href="contact.html"><span class="lx-en">Contact</span><span class="lx-zh">联系</span></a></li>
         </ul>
-        <div class="nav-cta"><a href="pricing.html" class="btn btn-primary">Get Credits</a></div>
-        <button class="nav-toggle" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="nav-cta">
+          <button class="lang-toggle" data-lang-toggle aria-label="Switch language / 切换语言"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.5 0 4.5-4 4.5-9S14.5 3 12 3 7.5 7 7.5 12s2 9 4.5 9ZM3.5 9h17M3.5 15h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lx-en">中文</span><span class="lx-zh">EN</span></button>
+          <a href="pricing.html" class="btn btn-primary"><span class="lx-en">Start free</span><span class="lx-zh">免费试用</span></a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       </nav>
     </div>
   </header>
 
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Contact</span>
-      <h1>We're here to help</h1>
-      <p class="lead">Questions about your account, a purchase, or our policies? Send us a message and we'll get back to you within one business day.</p>
+      <span class="eyebrow"><span class="lx-en">Contact</span><span class="lx-zh">联系</span></span>
+      <h1><span class="lx-en">We're here to help</span><span class="lx-zh">我们随时为你服务</span></h1>
+      <p class="lead"><span class="lx-en">Questions about your plan, billing, or our software? Send a message and we'll reply within one business day.</span><span class="lx-zh">关于方案、计费或软件的任何问题?给我们留言,我们会在 1 个工作日内回复。</span></p>
     </div>
   </section>
 
@@ -44,48 +48,48 @@
         <div>
           <form id="contact-form">
             <div class="field">
-              <label for="name">Your name</label>
+              <label for="name"><span class="lx-en">Your name</span><span class="lx-zh">你的称呼</span></label>
               <input type="text" id="name" name="name" required placeholder="Jane Doe" />
             </div>
             <div class="field">
-              <label for="email">Email address</label>
+              <label for="email"><span class="lx-en">Email address</span><span class="lx-zh">电子邮箱</span></label>
               <input type="email" id="email" name="email" required placeholder="you@example.com" />
             </div>
             <div class="field">
-              <label for="topic">Topic</label>
+              <label for="topic"><span class="lx-en">Topic</span><span class="lx-zh">主题</span></label>
               <select id="topic" name="topic">
-                <option>General question</option>
-                <option>Billing &amp; payments</option>
-                <option>Refund request</option>
-                <option>Account &amp; login</option>
-                <option>Report content / safety</option>
-                <option>Partnership</option>
+                <option>General question / 一般咨询</option>
+                <option>Billing &amp; subscription / 计费与订阅</option>
+                <option>Refund request / 退款申请</option>
+                <option>Account &amp; login / 账户与登录</option>
+                <option>Technical support / 技术支持</option>
+                <option>Partnership / 商务合作</option>
               </select>
             </div>
             <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+              <label for="message"><span class="lx-en">Message</span><span class="lx-zh">留言内容</span></label>
+              <textarea id="message" name="message" required placeholder="How can we help? / 我们能帮你什么?"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Send message</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block"><span class="lx-en">Send message</span><span class="lx-zh">发送留言</span></button>
             <div class="form-msg" id="form-msg"></div>
           </form>
         </div>
         <div class="contact-info">
           <div class="info-row">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4Zm0 2 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
-            <div><strong>Email</strong><br><a href="mailto:mihailradkevic2@gmail.com">mihailradkevic2@gmail.com</a><p class="muted" style="margin:4px 0 0;font-size:.9rem">Best for billing, refunds, and account help.</p></div>
+            <div><strong><span class="lx-en">Email</span><span class="lx-zh">邮箱</span></strong><br><a href="mailto:mihailradkevic2@gmail.com">mihailradkevic2@gmail.com</a><p class="muted" style="margin:4px 0 0;font-size:.9rem"><span class="lx-en">Best for billing, refunds, and account help.</span><span class="lx-zh">计费、退款、账户问题首选。</span></p></div>
           </div>
           <div class="info-row">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.7"/></svg></span>
-            <div><strong>Support hours</strong><br><span class="muted">Monday – Friday</span><p class="muted" style="margin:4px 0 0;font-size:.9rem">We reply to every message within 1 business day.</p></div>
+            <div><strong><span class="lx-en">Support hours</span><span class="lx-zh">客服时间</span></strong><br><span class="muted"><span class="lx-en">Monday – Friday</span><span class="lx-zh">周一至周五</span></span><p class="muted" style="margin:4px 0 0;font-size:.9rem"><span class="lx-en">We reply within 1 business day.</span><span class="lx-zh">我们会在 1 个工作日内回复。</span></p></div>
           </div>
           <div class="info-row">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.7"/></svg></span>
-            <div><strong>Service area</strong><br><span class="muted">Online service, available worldwide</span><p class="muted" style="margin:4px 0 0;font-size:.9rem">Available to adults 18+ where permitted by law.</p></div>
+            <div><strong><span class="lx-en">Availability</span><span class="lx-zh">服务范围</span></strong><br><span class="muted"><span class="lx-en">Online software, worldwide</span><span class="lx-zh">在线软件,面向全球</span></span></div>
           </div>
           <div class="info-row">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3 8-8m1 5v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
-            <div><strong>Looking for policies?</strong><br><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <a href="guidelines.html">Guidelines</a></div>
+            <div><strong><span class="lx-en">Looking for policies?</span><span class="lx-zh">在找政策条款?</span></strong><br><a href="terms.html"><span class="lx-en">Terms</span><span class="lx-zh">条款</span></a> · <a href="privacy.html"><span class="lx-en">Privacy</span><span class="lx-zh">隐私</span></a> · <a href="refund.html"><span class="lx-en">Refunds</span><span class="lx-zh">退款</span></a> · <a href="guidelines.html"><span class="lx-en">Use</span><span class="lx-zh">使用规范</span></a></div>
           </div>
         </div>
       </div>
@@ -97,14 +101,14 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="index.html" style="margin-bottom:14px"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/></svg></span>ChudongLive</a>
-          <p>A live-streaming social platform for real-time entertainment, AI conversation, and digital gifting. Built to be safe, fun, and welcoming for everyone 18+.</p>
+          <p><span class="lx-en">AI assistant software for live streamers — captions, AI co-host, smart replies, highlights, and analytics. Stream smarter, not harder.</span><span class="lx-zh">面向主播的 AI 直播辅助软件 —— 字幕、数字人、智能回复、高光剪辑与数据分析。让直播更聪明、更省力。</span></p>
         </div>
-        <div><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing &amp; credits</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About us</a></li></ul></div>
-        <div><h4>Legal</h4><ul><li><a href="terms.html">Terms of Service</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="refund.html">Refund Policy</a></li><li><a href="guidelines.html">Community Guidelines</a></li></ul></div>
-        <div><h4>Support</h4><ul><li><a href="contact.html">Contact us</a></li><li><a href="mailto:mihailradkevic2@gmail.com">Email support</a></li><li><a href="faq.html">Help center</a></li></ul></div>
+        <div><h4><span class="lx-en">Product</span><span class="lx-zh">产品</span></h4><ul><li><a href="features.html"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a></li><li><a href="pricing.html"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a></li><li><a href="faq.html"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a></li><li><a href="about.html"><span class="lx-en">About us</span><span class="lx-zh">关于我们</span></a></li></ul></div>
+        <div><h4><span class="lx-en">Legal</span><span class="lx-zh">法律</span></h4><ul><li><a href="terms.html"><span class="lx-en">Terms of Service</span><span class="lx-zh">服务条款</span></a></li><li><a href="privacy.html"><span class="lx-en">Privacy Policy</span><span class="lx-zh">隐私政策</span></a></li><li><a href="refund.html"><span class="lx-en">Refund Policy</span><span class="lx-zh">退款政策</span></a></li><li><a href="guidelines.html"><span class="lx-en">Acceptable Use</span><span class="lx-zh">使用规范</span></a></li></ul></div>
+        <div><h4><span class="lx-en">Support</span><span class="lx-zh">支持</span></h4><ul><li><a href="contact.html"><span class="lx-en">Contact us</span><span class="lx-zh">联系我们</span></a></li><li><a href="mailto:mihailradkevic2@gmail.com"><span class="lx-en">Email support</span><span class="lx-zh">邮件支持</span></a></li><li><a href="faq.html"><span class="lx-en">Help center</span><span class="lx-zh">帮助中心</span></a></li></ul></div>
       </div>
       <div class="footer-bottom">
-        <p>© <span data-year>2026</span> ChudongLive. All rights reserved.</p>
+        <p>© <span data-year>2026</span> ChudongLive. <span class="lx-en">All rights reserved.</span><span class="lx-zh">保留所有权利。</span></p>
         <div class="pay"><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Stripe</span></div>
       </div>
     </div>

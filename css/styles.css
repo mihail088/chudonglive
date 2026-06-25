@@ -307,6 +307,22 @@ p  { margin: 0 0 1rem; color: var(--text-soft); }
 .value-row { display:flex; gap:14px; margin-bottom: 18px; }
 .value-row .check { width: 26px; height: 26px; border-radius: 8px; background: rgba(54,211,154,.15); color: var(--success); display: grid; place-items: center; flex-shrink: 0; font-weight: 700; }
 
+/* ---------- Bilingual (i18n) toggle ---------- */
+html[data-lang="en"] .lx-zh { display: none !important; }
+html[data-lang="zh"] .lx-en { display: none !important; }
+.lang-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,.04); color: var(--text);
+  border: 1px solid var(--border); border-radius: 999px;
+  padding: 8px 14px; font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+.lang-toggle:hover { background: rgba(255,255,255,.09); border-color: rgba(124,92,255,.4); }
+.lang-toggle svg { width: 16px; height: 16px; opacity: .8; }
+@media (max-width: 640px) {
+  .nav .lang-toggle { position: absolute; right: 64px; top: 18px; padding: 6px 12px; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 920px) {
   .hero-grid, .split, .contact-grid { grid-template-columns: 1fr; }
