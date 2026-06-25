@@ -1,5 +1,8 @@
 # ChudongLive — AI live-streaming assistant (bilingual website)
 
+> Note: This is the redesigned version — a clean static site (inline-styled HTML, no React/Babel runtime), converted from the design export. Bilingual zh/en toggle, default Chinese. Hosted on GitHub Pages at https://www.vorexe.com
+
+
 Official website for **ChudongLive**, AI assistant software for live streamers
 (real-time captions & translation, AI avatar co-host, smart chat replies, auto highlight
 clips, multi-platform simulcast, and analytics). Built as a clean static site with

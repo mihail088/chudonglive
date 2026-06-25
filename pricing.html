@@ -1,134 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>(function(){try{var l=localStorage.getItem('lang')||'zh';l=l==='zh'?'zh':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l==='zh'?'zh-CN':'en');}catch(e){document.documentElement.setAttribute('data-lang','en');}})();</script>
-  <title>Pricing — ChudongLive | 定价 — AI 直播助手</title>
-  <meta name="description" content="ChudongLive pricing: a free plan plus simple monthly subscriptions. Cancel anytime, 7-day money-back guarantee. Secure billing by Stripe. | ChudongLive 定价方案。" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=2" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>定价 Pricing — ChudongLive</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var l=localStorage.getItem('lang')||'zh';document.documentElement.setAttribute('data-lang',l==='zh'?'zh':'en');}catch(e){document.documentElement.setAttribute('data-lang','zh');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0}*{box-sizing:border-box}
+  body{background:#FBFBFD;-webkit-font-smoothing:antialiased}
+  [data-lang="en"] .lx-zh{display:none!important}
+  [data-lang="zh"] .lx-en{display:none!important}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/><path d="M9.5 21.5h5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></span>ChudongLive</a>
-        <ul class="nav-links">
-          <li><a href="index.html"><span class="lx-en">Home</span><span class="lx-zh">首页</span></a></li>
-          <li><a href="features.html"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a></li>
-          <li><a href="pricing.html"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a></li>
-          <li><a href="about.html"><span class="lx-en">About</span><span class="lx-zh">关于</span></a></li>
-          <li><a href="faq.html"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a></li>
-          <li><a href="contact.html"><span class="lx-en">Contact</span><span class="lx-zh">联系</span></a></li>
-        </ul>
-        <div class="nav-cta">
-          <button class="lang-toggle" data-lang-toggle aria-label="Switch language / 切换语言"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.5 0 4.5-4 4.5-9S14.5 3 12 3 7.5 7 7.5 12s2 9 4.5 9ZM3.5 9h17M3.5 15h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lx-en">中文</span><span class="lx-zh">EN</span></button>
-          <a href="pricing.html" class="btn btn-primary"><span class="lx-en">Start free</span><span class="lx-zh">免费试用</span></a>
-        </div>
-        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-      </nav>
+
+<div style="font-family:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif;color:#17161C;background:#FBFBFD;line-height:1.6;--brand:#6C4DFF;--brand-deep:#5334E6;--brand-soft:#F2EEFF;--brand-ring:rgba(108,77,255,.28)">
+
+  
+<header style="position:sticky;top:0;z-index:50;background:rgba(251,251,253,.82);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid rgba(23,22,30,.07);font-family:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:18px;height:68px">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;color:#17161C;font-weight:800;font-size:20px;letter-spacing:-.02em;text-decoration:none;font-family:'Space Grotesk',sans-serif">
+      <span style="width:32px;height:32px;border-radius:9px;background:var(--brand,#6C4DFF);display:grid;place-items:center;box-shadow:0 6px 16px -6px var(--brand-ring,rgba(108,77,255,.28))">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 4.1 3 5.2V17a1.3 1.3 0 0 0 1.3 1.3h3.4A1.3 1.3 0 0 0 15 17v-2.8a6 6 0 0 0-3-11.2Z" fill="#fff"/><path d="M9.6 21h4.8" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </span>
+      Chudong
+    </a>
+    <nav style="display:flex;align-items:center;gap:2px;margin-left:18px;flex-wrap:wrap">
+      <a data-nav="home" href="index.html" style="color:#56535F;padding:8px 13px;border-radius:9px;font-weight:500;font-size:15px;text-decoration:none"><span class="lx-en">Home</span><span class="lx-zh">首页</span></a>
+      <a data-nav="features" href="features.html" style="color:#56535F;padding:8px 13px;border-radius:9px;font-weight:500;font-size:15px;text-decoration:none"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a>
+      <a data-nav="pricing" href="pricing.html" style="color:#56535F;padding:8px 13px;border-radius:9px;font-weight:500;font-size:15px;text-decoration:none"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a>
+      <a data-nav="about" href="about.html" style="color:#56535F;padding:8px 13px;border-radius:9px;font-weight:500;font-size:15px;text-decoration:none"><span class="lx-en">About</span><span class="lx-zh">关于</span></a>
+      <a data-nav="faq" href="faq.html" style="color:#56535F;padding:8px 13px;border-radius:9px;font-weight:500;font-size:15px;text-decoration:none"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a>
+      <a data-nav="contact" href="contact.html" style="color:#56535F;padding:8px 13px;border-radius:9px;font-weight:500;font-size:15px;text-decoration:none"><span class="lx-en">Contact</span><span class="lx-zh">联系</span></a>
+    </nav>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:10px">
+      <button onclick="__cdLang()" aria-label="切换语言" style="display:inline-flex;align-items:center;gap:6px;background:#fff;color:#56535F;border:1px solid rgba(23,22,30,.12);border-radius:9px;padding:8px 12px;font:inherit;font-size:14px;font-weight:600;cursor:pointer">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.4 0 4.3-4 4.3-9S14.4 3 12 3 7.7 7 7.7 12s1.9 9 4.3 9ZM3.5 9h17M3.5 15h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span class="lx-en">中文</span><span class="lx-zh">EN</span>
+      </button>
+      <a href="pricing.html" style="display:inline-flex;align-items:center;background:var(--brand,#6C4DFF);color:#fff;border-radius:10px;padding:10px 18px;font-weight:600;font-size:15px;text-decoration:none;box-shadow:0 8px 20px -10px var(--brand-ring,rgba(108,77,255,.28))"><span class="lx-en">Start free</span><span class="lx-zh">免费试用</span></a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></span>
-      <h1><span class="lx-en">Simple plans that grow with you</span><span class="lx-zh">随你成长的简单方案</span></h1>
-      <p class="lead"><span class="lx-en">Start free. Upgrade to unlock every AI tool. Cancel anytime — no lock-in. All prices in US dollars (USD).</span><span class="lx-zh">免费起步,升级即可解锁全部 AI 功能。随时取消,绝不绑定。所有价格以美元(USD)计价。</span></p>
-    </div>
-  </section>
 
-  <section class="section-sm">
-    <div class="container">
-      <div class="price-grid" style="grid-template-columns:repeat(3,1fr)">
-        <div class="price-card">
-          <div class="coins" style="font-size:1.4rem"><small><span class="lx-en">Free</span><span class="lx-zh">免费版</span></small></div>
-          <div class="usd">$0</div>
-          <div class="per"><span class="lx-en">forever</span><span class="lx-zh">永久免费</span></div>
-          <ul>
-            <li><span class="lx-en">Real-time captions (1 language)</span><span class="lx-zh">实时字幕(1 种语言)</span></li>
-            <li><span class="lx-en">Basic smart chat replies</span><span class="lx-zh">基础智能弹幕回复</span></li>
-            <li><span class="lx-en">1 streaming platform</span><span class="lx-zh">1 个直播平台</span></li>
-            <li><span class="lx-en">Up to 5 hrs/month</span><span class="lx-zh">每月最多 5 小时</span></li>
-            <li><span class="lx-en">Community support</span><span class="lx-zh">社区支持</span></li>
-          </ul>
-          <a href="contact.html" class="btn btn-ghost btn-block"><span class="lx-en">Get started</span><span class="lx-zh">免费开始</span></a>
-        </div>
-
-        <div class="price-card popular">
-          <span class="tag"><span class="lx-en">MOST POPULAR</span><span class="lx-zh">最受欢迎</span></span>
-          <div class="coins" style="font-size:1.4rem"><small><span class="lx-en">Pro</span><span class="lx-zh">专业版</span></small></div>
-          <div class="usd">$19<span style="font-size:1rem;font-weight:500;color:var(--muted)"><span class="lx-en"> / mo</span><span class="lx-zh"> / 月</span></span></div>
-          <div class="per"><span class="lx-en">or $190 / year (save 17%)</span><span class="lx-zh">或 $190 / 年(省 17%)</span></div>
-          <ul>
-            <li><span class="lx-en">Captions + translation (30+ languages)</span><span class="lx-zh">字幕 + 翻译(30+ 语言)</span></li>
-            <li><span class="lx-en">AI avatar co-host</span><span class="lx-zh">AI 数字人共播</span></li>
-            <li><span class="lx-en">Advanced auto-reply &amp; moderation</span><span class="lx-zh">高级自动回复与审核</span></li>
-            <li><span class="lx-en">Auto highlight clips</span><span class="lx-zh">高光自动剪辑</span></li>
-            <li><span class="lx-en">Up to 3 platforms simulcast</span><span class="lx-zh">最多 3 平台同步推流</span></li>
-            <li><span class="lx-en">Unlimited hours · Priority support</span><span class="lx-zh">不限时长 · 优先支持</span></li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary btn-block"><span class="lx-en">Start free trial</span><span class="lx-zh">免费试用</span></a>
-        </div>
-
-        <div class="price-card">
-          <div class="coins" style="font-size:1.4rem"><small><span class="lx-en">Studio</span><span class="lx-zh">工作室版</span></small></div>
-          <div class="usd">$49<span style="font-size:1rem;font-weight:500;color:var(--muted)"><span class="lx-en"> / mo</span><span class="lx-zh"> / 月</span></span></div>
-          <div class="per"><span class="lx-en">or $490 / year (save 17%)</span><span class="lx-zh">或 $490 / 年(省 17%)</span></div>
-          <ul>
-            <li><span class="lx-en">Everything in Pro</span><span class="lx-zh">包含专业版全部功能</span></li>
-            <li><span class="lx-en">Up to 5 team seats</span><span class="lx-zh">最多 5 个团队席位</span></li>
-            <li><span class="lx-en">Unlimited platforms simulcast</span><span class="lx-zh">不限平台同步推流</span></li>
-            <li><span class="lx-en">AI scripts &amp; topic studio</span><span class="lx-zh">AI 脚本与选题工作台</span></li>
-            <li><span class="lx-en">Team analytics &amp; exports</span><span class="lx-zh">团队数据分析与导出</span></li>
-            <li><span class="lx-en">Dedicated support</span><span class="lx-zh">专属客服支持</span></li>
-          </ul>
-          <a href="contact.html" class="btn btn-ghost btn-block"><span class="lx-en">Choose Studio</span><span class="lx-zh">选择工作室版</span></a>
-        </div>
-      </div>
-
-      <div class="note">
-        <strong><span class="lx-en">How billing works.</span><span class="lx-zh">关于计费方式。</span></strong>
-        <span class="lx-en"> Paid plans are recurring subscriptions billed monthly or yearly through Stripe. You can cancel anytime from your account settings; your plan stays active until the end of the current billing period and is not renewed afterward. New paid subscriptions include a <strong>7-day money-back guarantee</strong> — see our <a href="refund.html">Refund &amp; Cancellation Policy</a>. Prices exclude any applicable taxes. Charges appear on your statement as <em>CHUDONGLIVE</em>.</span>
-        <span class="lx-zh"> 付费方案为按月或按年自动续费的订阅,通过 Stripe 收款。你可随时在账户设置中取消;取消后当前计费周期内仍可继续使用,周期结束后不再续费。新购付费订阅享 <strong>7 天无理由退款保障</strong> —— 详见<a href="refund.html">退款与取消政策</a>。价格不含可能产生的税费。账单上会显示为 <em>CHUDONGLIVE</em>。</span>
-      </div>
+  <section style="position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(800px 400px at 80% -10%, var(--brand-soft,#F2EEFF), transparent 60%);pointer-events:none"></div>
+    <div style="position:relative;max-width:820px;margin:0 auto;padding:72px 24px 24px;text-align:center">
+      <span style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand,#6C4DFF);margin-bottom:14px"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></span>
+      <h1 style="font-family:'Space Grotesk','Noto Sans SC',sans-serif;font-weight:700;letter-spacing:-.025em;font-size:clamp(2rem,4vw,3rem);margin:0 0 16px"><span class="lx-en">Simple plans that grow with you</span><span class="lx-zh">随你成长的简单方案</span></h1>
+      <p style="font-size:18px;color:#56535F;max-width:640px;margin:0 auto"><span class="lx-en">Start free. Upgrade to unlock every AI tool. Cancel anytime — no lock-in. All prices in US dollars (USD).</span><span class="lx-zh">免费起步,升级即可解锁全部 AI 功能。随时取消,绝不绑定。所有价格以美元(USD)计价。</span></p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="center" style="max-width:720px;margin:0 auto">
-        <span class="eyebrow"><span class="lx-en">Billing &amp; payment</span><span class="lx-zh">支付与计费</span></span>
-        <h2><span class="lx-en">Safe, transparent payments</span><span class="lx-zh">安全、透明的支付</span></h2>
-        <div class="value-row" style="text-align:left"><span class="check">✓</span><div><span class="lx-en"><strong>Secure checkout.</strong> Payments are processed by Stripe (PCI-DSS Level 1). We never see or store your full card number.</span><span class="lx-zh"><strong>安全收银台。</strong> 支付由 Stripe(PCI-DSS Level 1 认证)处理,我们不会接触或存储你的完整卡号。</span></div></div>
-        <div class="value-row" style="text-align:left"><span class="check">✓</span><div><span class="lx-en"><strong>Cancel anytime.</strong> Manage or cancel your subscription in a couple of clicks — no phone calls, no hassle.</span><span class="lx-zh"><strong>随时取消。</strong> 几步点击即可管理或取消订阅,无需打电话、毫不麻烦。</span></div></div>
-        <div class="value-row" style="text-align:left"><span class="check">✓</span><div><span class="lx-en"><strong>Clear receipts.</strong> An email receipt is sent for every charge, so you always know what you paid for.</span><span class="lx-zh"><strong>清晰收据。</strong> 每笔扣款都会发送邮件收据,让你随时清楚付了什么。</span></div></div>
-        <div class="value-row" style="text-align:left"><span class="check">✓</span><div><span class="lx-en"><strong>Questions?</strong> Our team is happy to help — <a href="contact.html">contact support</a>.</span><span class="lx-zh"><strong>有疑问?</strong> 我们的团队乐意协助 —— <a href="contact.html">联系客服</a>。</span></div></div>
+  <section style="max-width:1080px;margin:0 auto;padding:40px 24px 16px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;align-items:start">
+
+      <!-- FREE -->
+      <div style="background:#fff;border:1px solid rgba(23,22,30,.1);border-radius:18px;padding:30px 26px">
+        <div style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#908D9C;margin-bottom:8px"><span class="lx-en">Free</span><span class="lx-zh">免费版</span></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px">$0</div>
+        <div style="font-size:14px;color:#908D9C;margin-bottom:22px"><span class="lx-en">forever</span><span class="lx-zh">永久免费</span></div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:24px">
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Real-time captions (1 language)</span><span class="lx-zh">实时字幕(1 种语言)</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Basic smart chat replies</span><span class="lx-zh">基础智能弹幕回复</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">1 streaming platform</span><span class="lx-zh">1 个直播平台</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Up to 5 hrs / month</span><span class="lx-zh">每月最多 5 小时</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Community support</span><span class="lx-zh">社区支持</span></div>
+        </div>
+        <a href="contact.html" style="display:flex;justify-content:center;background:#fff;color:#17161C;border:1px solid rgba(23,22,30,.16);border-radius:11px;padding:13px;font-weight:600;font-size:15px;text-decoration:none"><span class="lx-en">Get started</span><span class="lx-zh">免费开始</span></a>
+      </div>
+
+      <!-- PRO (popular) -->
+      <div style="position:relative;background:#fff;border:1.5px solid var(--brand,#6C4DFF);border-radius:18px;padding:30px 26px;box-shadow:0 26px 60px -30px var(--brand-ring,rgba(108,77,255,.28))">
+        <span style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--brand,#6C4DFF);color:#fff;font-size:12px;font-weight:700;letter-spacing:.04em;padding:5px 14px;border-radius:999px"><span class="lx-en">MOST POPULAR</span><span class="lx-zh">最受欢迎</span></span>
+        <div style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand,#6C4DFF);margin-bottom:8px"><span class="lx-en">Pro</span><span class="lx-zh">专业版</span></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px">$19<span style="font-size:16px;font-weight:500;color:#908D9C"><span class="lx-en"> / mo</span><span class="lx-zh"> / 月</span></span></div>
+        <div style="font-size:14px;color:#908D9C;margin-bottom:22px"><span class="lx-en">or $190 / year (save 17%)</span><span class="lx-zh">或 $190 / 年(省 17%)</span></div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:24px">
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Captions + translation (30+ languages)</span><span class="lx-zh">字幕 + 翻译(30+ 语言)</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">AI avatar co-host</span><span class="lx-zh">AI 数字人共播</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Advanced auto-reply &amp; moderation</span><span class="lx-zh">高级自动回复与审核</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Auto highlight clips</span><span class="lx-zh">高光自动剪辑</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Up to 3 platforms simulcast</span><span class="lx-zh">最多 3 平台同步推流</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Unlimited hours · Priority support</span><span class="lx-zh">不限时长 · 优先支持</span></div>
+        </div>
+        <a href="contact.html" style="display:flex;justify-content:center;background:var(--brand,#6C4DFF);color:#fff;border-radius:11px;padding:13px;font-weight:700;font-size:15px;text-decoration:none"><span class="lx-en">Start free trial</span><span class="lx-zh">免费试用</span></a>
+      </div>
+
+      <!-- STUDIO -->
+      <div style="background:#fff;border:1px solid rgba(23,22,30,.1);border-radius:18px;padding:30px 26px">
+        <div style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#908D9C;margin-bottom:8px"><span class="lx-en">Studio</span><span class="lx-zh">工作室版</span></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px">$49<span style="font-size:16px;font-weight:500;color:#908D9C"><span class="lx-en"> / mo</span><span class="lx-zh"> / 月</span></span></div>
+        <div style="font-size:14px;color:#908D9C;margin-bottom:22px"><span class="lx-en">or $490 / year (save 17%)</span><span class="lx-zh">或 $490 / 年(省 17%)</span></div>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:24px">
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Everything in Pro</span><span class="lx-zh">包含专业版全部功能</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Up to 5 team seats</span><span class="lx-zh">最多 5 个团队席位</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Unlimited platforms simulcast</span><span class="lx-zh">不限平台同步推流</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">AI scripts &amp; topic studio</span><span class="lx-zh">AI 脚本与选题工作台</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Team analytics &amp; exports</span><span class="lx-zh">团队数据分析与导出</span></div>
+          <div style="display:flex;gap:9px;font-size:14px;color:#56535F"><span style="color:var(--brand,#6C4DFF);font-weight:700">✓</span><span class="lx-en">Dedicated support</span><span class="lx-zh">专属客服支持</span></div>
+        </div>
+        <a href="contact.html" style="display:flex;justify-content:center;background:#fff;color:#17161C;border:1px solid rgba(23,22,30,.16);border-radius:11px;padding:13px;font-weight:600;font-size:15px;text-decoration:none"><span class="lx-en">Choose Studio</span><span class="lx-zh">选择工作室版</span></a>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;max-width:1080px;padding:18px 20px;border-radius:14px;background:#fff;border:1px solid rgba(23,22,30,.09);color:#56535F;font-size:14px;line-height:1.7">
+      <strong style="color:#17161C"><span class="lx-en">How billing works.</span><span class="lx-zh">关于计费方式。</span></strong>
+      <span class="lx-en"> Paid plans are recurring subscriptions billed monthly or yearly through Stripe. You can cancel anytime from your account settings; your plan stays active until the end of the current billing period and is not renewed afterward. New paid subscriptions include a <strong style="color:#17161C">7-day money-back guarantee</strong> — see our <a href="refund.html" style="color:var(--brand-deep,#5334E6)">Refund &amp; Cancellation Policy</a>. Prices exclude any applicable taxes. Charges appear on your statement as <em>CHUDONG</em>.</span>
+      <span class="lx-zh"> 付费方案为按月或按年自动续费的订阅,通过 Stripe 收款。你可随时在账户设置中取消;取消后当前计费周期内仍可继续使用,周期结束后不再续费。新购付费订阅享 <strong style="color:#17161C">7 天无理由退款保障</strong> —— 详见<a href="refund.html" style="color:var(--brand-deep,#5334E6)">退款与取消政策</a>。价格不含可能产生的税费。账单上会显示为 <em>CHUDONG</em>。</span>
+    </div>
+  </section>
+
+  <!-- BILLING TRUST -->
+  <section style="background:#fff;border-top:1px solid rgba(23,22,30,.07);border-bottom:1px solid rgba(23,22,30,.07);margin-top:48px">
+    <div style="max-width:760px;margin:0 auto;padding:80px 24px">
+      <div style="text-align:center;margin-bottom:36px">
+        <span style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand,#6C4DFF);margin-bottom:12px"><span class="lx-en">Billing &amp; payment</span><span class="lx-zh">支付与计费</span></span>
+        <h2 style="font-family:'Space Grotesk','Noto Sans SC',sans-serif;font-weight:700;letter-spacing:-.02em;font-size:clamp(1.6rem,3vw,2.2rem);margin:0"><span class="lx-en">Safe, transparent payments</span><span class="lx-zh">安全、透明的支付</span></h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;gap:13px"><span style="flex-shrink:0;width:26px;height:26px;border-radius:8px;background:var(--brand-soft,#F2EEFF);color:var(--brand,#6C4DFF);display:grid;place-items:center;font-weight:700">✓</span><div style="font-size:15px;color:#56535F"><span class="lx-en"><strong style="color:#17161C">Secure checkout.</strong> Payments are processed by Stripe (PCI-DSS Level 1). We never see or store your full card number.</span><span class="lx-zh"><strong style="color:#17161C">安全收银台。</strong> 支付由 Stripe(PCI-DSS Level 1 认证)处理,我们不会接触或存储你的完整卡号。</span></div></div>
+        <div style="display:flex;gap:13px"><span style="flex-shrink:0;width:26px;height:26px;border-radius:8px;background:var(--brand-soft,#F2EEFF);color:var(--brand,#6C4DFF);display:grid;place-items:center;font-weight:700">✓</span><div style="font-size:15px;color:#56535F"><span class="lx-en"><strong style="color:#17161C">Cancel anytime.</strong> Manage or cancel your subscription in a couple of clicks — no phone calls, no hassle.</span><span class="lx-zh"><strong style="color:#17161C">随时取消。</strong> 几步点击即可管理或取消订阅,无需打电话、毫不麻烦。</span></div></div>
+        <div style="display:flex;gap:13px"><span style="flex-shrink:0;width:26px;height:26px;border-radius:8px;background:var(--brand-soft,#F2EEFF);color:var(--brand,#6C4DFF);display:grid;place-items:center;font-weight:700">✓</span><div style="font-size:15px;color:#56535F"><span class="lx-en"><strong style="color:#17161C">Clear receipts.</strong> An email receipt is sent for every charge, so you always know what you paid for.</span><span class="lx-zh"><strong style="color:#17161C">清晰收据。</strong> 每笔扣款都会发送邮件收据,让你随时清楚付了什么。</span></div></div>
+        <div style="display:flex;gap:13px"><span style="flex-shrink:0;width:26px;height:26px;border-radius:8px;background:var(--brand-soft,#F2EEFF);color:var(--brand,#6C4DFF);display:grid;place-items:center;font-weight:700">✓</span><div style="font-size:15px;color:#56535F"><span class="lx-en"><strong style="color:#17161C">Questions?</strong> Our team is happy to help — <a href="contact.html" style="color:var(--brand-deep,#5334E6)">contact support</a>.</span><span class="lx-zh"><strong style="color:#17161C">有疑问?</strong> 我们的团队乐意协助 —— <a href="contact.html" style="color:var(--brand-deep,#5334E6)">联系客服</a>。</span></div></div>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html" style="margin-bottom:14px"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.9 3.5 6.1V18a1.5 1.5 0 0 0 1.5 1.5h4A1.5 1.5 0 0 0 15.5 18v-2.9A7 7 0 0 0 12 2Z" fill="#fff"/></svg></span>ChudongLive</a>
-          <p><span class="lx-en">AI assistant software for live streamers — captions, AI co-host, smart replies, highlights, and analytics. Stream smarter, not harder.</span><span class="lx-zh">面向主播的 AI 直播辅助软件 —— 字幕、数字人、智能回复、高光剪辑与数据分析。让直播更聪明、更省力。</span></p>
-        </div>
-        <div><h4><span class="lx-en">Product</span><span class="lx-zh">产品</span></h4><ul><li><a href="features.html"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a></li><li><a href="pricing.html"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a></li><li><a href="faq.html"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a></li><li><a href="about.html"><span class="lx-en">About us</span><span class="lx-zh">关于我们</span></a></li></ul></div>
-        <div><h4><span class="lx-en">Legal</span><span class="lx-zh">法律</span></h4><ul><li><a href="terms.html"><span class="lx-en">Terms of Service</span><span class="lx-zh">服务条款</span></a></li><li><a href="privacy.html"><span class="lx-en">Privacy Policy</span><span class="lx-zh">隐私政策</span></a></li><li><a href="refund.html"><span class="lx-en">Refund Policy</span><span class="lx-zh">退款政策</span></a></li><li><a href="guidelines.html"><span class="lx-en">Acceptable Use</span><span class="lx-zh">使用规范</span></a></li></ul></div>
-        <div><h4><span class="lx-en">Support</span><span class="lx-zh">支持</span></h4><ul><li><a href="contact.html"><span class="lx-en">Contact us</span><span class="lx-zh">联系我们</span></a></li><li><a href="mailto:mihailradkevic2@gmail.com"><span class="lx-en">Email support</span><span class="lx-zh">邮件支持</span></a></li><li><a href="faq.html"><span class="lx-en">Help center</span><span class="lx-zh">帮助中心</span></a></li></ul></div>
+  
+<footer style="background:#fff;border-top:1px solid rgba(23,22,30,.08);font-family:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:56px 24px 30px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-bottom:40px">
+      <div style="grid-column:span 1;min-width:220px">
+        <a href="index.html" style="display:flex;align-items:center;gap:10px;color:#17161C;font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none;font-family:'Space Grotesk',sans-serif;margin-bottom:14px"><span style="width:30px;height:30px;border-radius:9px;background:var(--brand,#6C4DFF);display:grid;place-items:center"><svg viewBox="0 0 24 24" width="17" height="17" fill="none"><path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 4.1 3 5.2V17a1.3 1.3 0 0 0 1.3 1.3h3.4A1.3 1.3 0 0 0 15 17v-2.8a6 6 0 0 0-3-11.2Z" fill="#fff"/></svg></span>Chudong</a>
+        <p style="font-size:14px;color:#56535F;max-width:280px;margin:0"><span class="lx-en">AI assistant software for live streamers — captions, AI co-host, smart replies, highlights, and analytics.</span><span class="lx-zh">面向主播的 AI 直播辅助软件 —— 字幕、数字人、智能回复、高光剪辑与数据分析。</span></p>
       </div>
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> ChudongLive. <span class="lx-en">All rights reserved.</span><span class="lx-zh">保留所有权利。</span></p>
-        <div class="pay"><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Stripe</span></div>
+      <div>
+        <h4 style="font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#908D9C;margin:0 0 14px;font-weight:700"><span class="lx-en">Product</span><span class="lx-zh">产品</span></h4>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+          <a href="features.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Features</span><span class="lx-zh">功能</span></a>
+          <a href="pricing.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Pricing</span><span class="lx-zh">定价</span></a>
+          <a href="faq.html" style="color:#56535F;text-decoration:none"><span class="lx-en">FAQ</span><span class="lx-zh">常见问题</span></a>
+          <a href="about.html" style="color:#56535F;text-decoration:none"><span class="lx-en">About us</span><span class="lx-zh">关于我们</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#908D9C;margin:0 0 14px;font-weight:700"><span class="lx-en">Legal</span><span class="lx-zh">法律</span></h4>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+          <a href="terms.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Terms of Service</span><span class="lx-zh">服务条款</span></a>
+          <a href="privacy.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Privacy Policy</span><span class="lx-zh">隐私政策</span></a>
+          <a href="refund.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Refund Policy</span><span class="lx-zh">退款政策</span></a>
+          <a href="guidelines.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Acceptable Use</span><span class="lx-zh">使用规范</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#908D9C;margin:0 0 14px;font-weight:700"><span class="lx-en">Support</span><span class="lx-zh">支持</span></h4>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+          <a href="contact.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Contact us</span><span class="lx-zh">联系我们</span></a>
+          <a href="mailto:mihailradkevic2@gmail.com" style="color:#56535F;text-decoration:none"><span class="lx-en">Email support</span><span class="lx-zh">邮件支持</span></a>
+          <a href="faq.html" style="color:#56535F;text-decoration:none"><span class="lx-en">Help center</span><span class="lx-zh">帮助中心</span></a>
+        </div>
       </div>
     </div>
-  </footer>
-  <script src="js/main.js?v=2"></script>
+    <div style="border-top:1px solid rgba(23,22,30,.08);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center">
+      <p style="margin:0;font-size:13px;color:#908D9C">© 2026 Chudong. <span class="lx-en">All rights reserved.</span><span class="lx-zh">保留所有权利。</span></p>
+      <div style="display:inline-flex;gap:8px;align-items:center;font-size:13px;color:#56535F;background:#FBFBFD;border:1px solid rgba(23,22,30,.1);border-radius:9px;padding:7px 13px">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M6 10V8a6 6 0 0 1 12 0v2" stroke="var(--brand,#6C4DFF)" stroke-width="1.7" stroke-linecap="round"/><rect x="4" y="10" width="16" height="10" rx="2.5" stroke="var(--brand,#6C4DFF)" stroke-width="1.7"/><circle cx="12" cy="15" r="1.4" fill="var(--brand,#6C4DFF)"/></svg>
+        <span class="lx-en">Secure payments powered by <strong style="color:#17161C;font-weight:700">Stripe</strong></span><span class="lx-zh">安全支付由 <strong style="color:#17161C;font-weight:700">Stripe</strong> 提供</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+
+<script>function __cdLang(){var h=document.documentElement;var n=h.getAttribute('data-lang')==='zh'?'en':'zh';h.setAttribute('data-lang',n);try{localStorage.setItem('lang',n);}catch(e){}}function __cdForm(f){var m=document.getElementById('cdFormMsg');if(m){m.style.display='block';}if(f&&f.reset){f.reset();}return false;}</script>
 </body>
 </html>
